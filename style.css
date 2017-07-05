@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  background-color:blue;
+}
+h1, p  {
+  color: #fff;
+}
+p.list {
+  margin-top:-16px;
+}
+
+.cmdline {
+  margin-top:-13px;
+  color:#fff;
+}
