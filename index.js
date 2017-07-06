@@ -1,6 +1,5 @@
-
-var eventList = document.getElementById("in").value;
 function traverseTCPStates(eventList){
+var eventList = document.getElementById("in").value;
   var state = "CLOSED";  
   for(var e in eventList){ // for every variable in eventList
     switch(state){ // cycle through each state
@@ -9,7 +8,7 @@ function traverseTCPStates(eventList){
                 (eventList[e] == "APP_ACTIVE_OPEN" ) ? "SYN_SENT" : "ERROR"; 
         break;
       case "LISTEN":
-        state = (eventList[e] == "RCV_SYN"  ) ? "SYN_RCVD" :
+        state = (eventList[e] == "RCV_SYN"  )d ? "SYN_RCVD" :
                 (eventList[e] == "APP_SEND" ) ? "SYN_SENT" :
                 (eventList[e] == "APP_CLOSE") ? "CLOSED"   : "ERROR";
         break;
@@ -48,7 +47,5 @@ function traverseTCPStates(eventList){
         break;
     }
   }
- alert(state);
+alert(state);
 }
-
-
