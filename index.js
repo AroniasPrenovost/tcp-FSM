@@ -1,4 +1,5 @@
 
+var eventList = document.getElementById("in").value;
 function traverseTCPStates(eventList){
   var state = "CLOSED";  
   for(var e in eventList){ // for every variable in eventList
@@ -49,4 +50,5 @@ function traverseTCPStates(eventList){
   }
  alert(state);
 }
+
 
